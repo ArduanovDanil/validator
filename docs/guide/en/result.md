@@ -1,4 +1,4 @@
-# Result
+# Result test changes
 
 The validation result is an object containing of errors occurred during validation.
 
