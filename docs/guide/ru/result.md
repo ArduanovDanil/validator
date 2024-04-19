@@ -1,4 +1,4 @@
-# Результаты тестовые изменения для теста
+# Результаты тестовые изменения для теста из weblate
 
 The validation's result is an object containing of errors occurred during
 validation.
