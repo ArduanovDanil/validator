@@ -1,6 +1,6 @@
 # Тестовые изменения с hosted.weblate.org
 
-тест.
+Еще тестовые изменения из hosted.weblate.org.
 
 ## Is validation successful?
 
