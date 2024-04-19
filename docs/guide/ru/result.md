@@ -1,11 +1,11 @@
-# Результаты тестовые изменения для теста из weblate
+# Тестовые изменения с hosted.weblate.org
 
 тест.
 
-## Валидация успешна?
+## Is validation successful?
 
-Чтобы просто проверить статус валидации (валидны ли данные в целом), используйте
-следующий API-вызов `Result`:
+To just check the status of validation (whether a data is valid as a whole), use
+the following `Result` API call:
 
 ```php
 use Yiisoft\Validator\Result;
@@ -14,7 +14,7 @@ use Yiisoft\Validator\Result;
 $result->isValid();
 ```
 
-Его можно сузить до определенного атрибута:
+It can be narrowed down to a specific attribute:
 
 ```php
 use Yiisoft\Validator\Result;
@@ -23,15 +23,14 @@ use Yiisoft\Validator\Result;
 $result->isAttributeValid('name');
 ```
 
-## Ошибки
+## Errors
 
-В большинстве случаев недостаточно указать только статус валидации. Существует
-несколько способов получить подробный список ошибок с данными о них из
-результата. Разница между ними заключается в группировке, фильтрации и
-представлении каждой ошибки. В зависимости от ситуации выбирайте тот, который
-соответствует вашим потребностям.
+Most of the time telling only the status of validation is not enough. There are
+multiple methods to get detailed errors list with their data from the result.
+The difference between them is in the grouping, filtering, and representation of
+every error. Choose one to fit your needs depending on the situation.
 
-### Плоский список сообщений об ошибках
+### Flat list of error messages
 
 One of the simplest cases is getting a flat list of all error messages. Use the
 following `Result` API call:
