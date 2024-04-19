@@ -2,7 +2,7 @@
 
 Еще тестовые изменения из hosted.weblate.org.
 
-## Is validation successful?
+## Валидация успешна (запушено локально)?
 
 To just check the status of validation (whether a data is valid as a whole), use
 the following `Result` API call:
