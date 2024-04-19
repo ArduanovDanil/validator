@@ -2,10 +2,10 @@
 
 Еще тестовые изменения из hosted.weblate.org.
 
-## Валидация успешна (запушено локально)?
+## Является ли проверка успешной?
 
-To just check the status of validation (whether a data is valid as a whole), use
-the following `Result` API call:
+Чтобы просто проверить состояние проверки (будь то данные действительны в
+целом), используйте следующий `Вызов API:
 
 ```php
 use Yiisoft\Validator\Result;
