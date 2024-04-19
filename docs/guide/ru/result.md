@@ -1,4 +1,4 @@
-# Результаты тестовые изменения
+# Результаты тестовые изменения для теста
 
 The validation's result is an object containing of errors occurred during
 validation.
