@@ -1,7 +1,7 @@
 # `Each` - applying the same rules for each data item in the set
 
 The `Each` rule allows the same rules to be applied to each data item in the set. The following example shows
-the configuration for validating [RGB color] components:
+the configuration for validating [RGB color] components and add test string:
 
 ```php
 use Yiisoft\Validator\Rule\Each;
@@ -60,6 +60,60 @@ $rule = new Nested([
 ```
 
 For more information about using it with `Nested`, see the [Nested] guide.
+
+| Place | User     | Rating  |
+|-------|----------|---------|
+| 1     | Sasha    | 118     |
+| 2     | Ivan     | 92      |
+| 3     | Ivan     | 36      |
+
+- [x] One
+- [x] Two
+- [ ] Three
+    - [x] Three
+    - [x] Three
+    - [ ] Three
+- [ ] Four
+
+~~Hello, Ivan!~~\
+Hello, Ivan!
+
+Hellow, [Doka](https://doka.guide "Page about web-dev")!
+
+[Doka][1] have own [repository][repo].
+
+1. One
+1. One One
+1. One
+1. One
+
+
+* One
+* OneOneOne
+    * One
+    * OneOne
+
+See the [Using keys containing separator / shortcut][shortcut] section for more
+details.
+
+Using php [attributes][attr]
+
+# Yii Validator
+
+A package for validating data.
+
+## Guides
+
+### Validation
+
+- [Result](index.rst)
+
+
+[shortcut]: built-in-rules-nested.md#using-keys-containing-separator--shortcut
+[attr]: built-in-rules-nested.md#using-php-attributes
+[1]: https://doka.guide "Info about web-dev"
+[repo]: https://github.com/doka-guide "Doka repository"
+
 
 [RGB color]: https://en.wikipedia.org/wiki/RGB_color_model
 [Nested]: built-in-rules-nested.md
