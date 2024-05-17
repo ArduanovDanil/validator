@@ -20,7 +20,7 @@ use Yiisoft\Validator\Rule\Each;
 use Yiisoft\Validator\Rule\Integer;
 
 $rules = [
-    // Applies to a whole set.
+    // Applies to a whole set change comment.
     new Count(3),
     // Applies to individual set items.
     new Each(        
@@ -30,7 +30,7 @@ $rules = [
 ];
 ```
 
-Validated data items are not limited to only "simple" values - `Each` can be used both within a `Nested` and contain 
+Validated data items are not limited to only "simple" values - `Each` can be used both within a `Nested set` and contain 
 `Nested` rule covering one-to-many and many-to-many relations:
 
 ```php
@@ -115,5 +115,5 @@ A package for validating data.
 [repo]: https://github.com/doka-guide "Doka repository"
 
 
-[RGB color]: https://en.wikipedia.org/wiki/RGB_color_model
+[RGB color]: https://en.wikipedia.org/wiki/RGB_color_model?changed_link=1
 [Nested]: built-in-rules-nested.md
